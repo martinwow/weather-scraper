@@ -1,10 +1,10 @@
-# XML_scraper
+# XML scraper
 
 A simple project that scrapes weather data from automatic weather stations and stores it for future analysis. Code is stored in a single file *main.py*.
 
 Source of weather data is the [arso page](https://meteo.arso.gov.si/met/sl/service/), we're scraping data in the XML format.
 
-User can specify list of measuring stations that should be monitored and for which parameters data should be retrieved.
+User can specify list of measuring stations that should be monitored and for which parameters data should be retrieved. Code runs indefinitely until manual interruption; in PyCharm, this is CTRL+C.
 
 Data is fetched every hour after starting the process. Initially, it's stored in a pandas dataframe, giving options for analytical procedures. After that, data is optionally stored into a csv file as well as a simple SQL database. Two databases are an option: sqlite and mySQL. SQLite database can be created, mySQL is a mock database.
 
